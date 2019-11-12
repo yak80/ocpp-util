@@ -1,0 +1,27 @@
+{
+  "name": "ocpp-util",
+  "version": "1.0.0",
+  "description": "OCPP utility library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "docs": "jsdoc -c .jsdocrc",
+    "http-docs": "PORT=${PORT:-8080}; http-server -p $PORT docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:romfrolov/ocpp-util.git"
+  },
+  "keywords": [],
+  "author": "Roman Frolov <justcallmefrolov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.7",
+    "http-server": "^0.11.1",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.6.3",
+    "mocha": "^6.2.2",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
