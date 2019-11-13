@@ -1,7 +1,7 @@
 # OCPP Util
 *Work in progress*
 
-![](https://github.com/romfrolov/ocpp-util/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/ocpp-util.svg)](https://badge.fury.io/js/ocpp-util)
+![](https://github.com/romfrolov/ocpp-util/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/ocpp-util.svg)](https://badge.fury.io/js/ocpp-util) [![Coverage Status](https://coveralls.io/repos/github/romfrolov/ocpp-util/badge.svg?branch=master)](https://coveralls.io/github/romfrolov/ocpp-util?branch=master)
 
 A zero-dependency OCPP utility library.
 
