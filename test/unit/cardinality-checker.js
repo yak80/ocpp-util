@@ -10,7 +10,7 @@ require('chai').should();
 
 const checkCardinality = require('../../lib/cardinality-checker');
 
-describe('OCPP cardinality checker', () => {
+describe('Cardinality checker', () => {
     describe('0..1', () => {
         it('zero arguments', () => {
             const field = undefined;
