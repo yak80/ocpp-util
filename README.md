@@ -1,7 +1,9 @@
 # OCPP Util
 *Work in progress*
 
-OCPP utility library.
+![](https://github.com/romfrolov/ocpp-util/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/ocpp-util.svg)](https://badge.fury.io/js/ocpp-util)
+
+A zero-dependency OCPP utility library.
 
 ## Table of Contents
 
