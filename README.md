@@ -37,6 +37,19 @@ ocppUtil.checkCardinality('0..1', input);
 ocppUtil.checkType('identifierString', input, 20));
 ```
 
+**Supported types:**
+- `AnyType` - Text, data without specified length or format.
+- `string` - The characters defined in the [Unicode](http://www.unicode.org/versions/Unicode10.0.0/) character set are allowed to be used.
+- `identifierString` - Only the following character set is allowed: `a-z, A-Z, 0-9, '*', '-', '_', '=', ':', '+', '|', '@', '.'`.
+- `integer` - 32 bit (31 bit resolution, 1 sign bit).
+- `decimal` - For data being reported by the Charging Station, the full resolution of the source data must be
+preserved. The decimal sent towards the Charging Station SHALL NOT have more than six
+decimal places.
+- `dateTime` - All time values exchanged between CSMS and Charging Station SHALL be formatted as
+defined in [[RFC3339]](https://tools.ietf.org/html/rfc3339). Additionally fractional seconds have been given an extra limit. The
+number of decimal places SHALL NOT exceed the maximum of 3.
+- `boolean` - Only allowed values: `false` and `true`.
+
 ### enums
 
 ```js
