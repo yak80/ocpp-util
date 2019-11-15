@@ -28,19 +28,19 @@ const ocppUtil = require('ocpp-util');
 ### checkCardinality
 
 ```js
-ocppUtil.checkCardinality('0..1', field);
+ocppUtil.checkCardinality('0..1', input);
 ```
 
 ### checkType
 
 ```js
-ocppUtil.checkType('identifierString', identifierString, 20));
+ocppUtil.checkType('identifierString', input, 20));
 ```
 
 ### enums
 
 ```js
-console.log(ocppUtil.enums.TRANSACTION_EVENT); // [ 'Ended', 'Started', 'Updated' ]
+console.log(ocppUtil.enums('2.0').TRANSACTION_EVENT); // [ 'Ended', 'Started', 'Updated' ]
 ```
 
 ## Documentation
