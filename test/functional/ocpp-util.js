@@ -8,7 +8,7 @@
 
 require('chai').should();
 
-const ocppUtil = require('../../index');
+const ocppUtil = require('../../');
 
 describe('OCPP Util', () => {
     it('check cardinality', () => {
