@@ -6,6 +6,7 @@
 
 'use strict';
 
+const moment      = require('moment');
 const helpers     = require('../helpers');
 const typeChecker = require('../../lib/type-checker');
 
@@ -349,8 +350,14 @@ describe('Type checker', () => {
             typeChecker('dateTime', dt).should.be.false;
         });
 
-        it('date', () => {
-            const dt = '2019-11-14T01:51:00Z';
+        it('ISO 8601 date in UTC with milliseconds', () => {
+            const dt = moment().format();
+            console.log('Moment:', dt);
+            typeChecker('dateTime', dt).should.be.true;
+        });
+
+        it('date without milliseconds and with the timezone offset.', () => {
+            const dt = moment().toISOString();
 
             typeChecker('dateTime', dt).should.be.true;
         });
