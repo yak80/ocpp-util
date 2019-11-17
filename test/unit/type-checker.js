@@ -41,8 +41,8 @@ describe('Type checker', () => {
             typeChecker('string', s, 20).should.be.true;
         });
 
-        it('still unicode string', () => {
-            const s = '🐶';
+        it('short string', () => {
+            const s = '123';
 
             typeChecker('string', s, 20).should.be.true;
         });
