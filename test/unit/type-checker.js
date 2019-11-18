@@ -352,7 +352,7 @@ describe('Type checker', () => {
 
         it('ISO 8601 date in UTC with milliseconds', () => {
             const dt = moment().format();
-            console.log('Moment:', dt);
+
             typeChecker('dateTime', dt).should.be.true;
         });
 

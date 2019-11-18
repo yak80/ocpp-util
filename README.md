@@ -16,9 +16,13 @@ OCPP utility library.
 
 ## Quick start
 
+Install:
+
 ```bash
-npm install ocpp-util
+npm i ocpp-util
 ```
+
+Import:
 
 ```js
 const ocppUtil = require('ocpp-util');
@@ -26,15 +30,42 @@ const ocppUtil = require('ocpp-util');
 
 ### checkCardinality
 
+The `checkCardinality()` method verifies that the input has a correct cardinality.
+
 ```js
-ocppUtil.checkCardinality('0..1', input);
+ocppUtil.checkCardinality(card, input);
 ```
+
+**Parameters**
+
+- `card` {String} - expected cardinality.
+- `input` {Any} - input value to check.
+
+**Return value**
+
+Boolean. `true` if input has passed the check.
+
+**Supported cardinalities:**
+- `0..1`, `0..2`, ..., `0..*`
+- `1..1`, `1..2`, ..., `1..*`
 
 ### checkType
 
+The `checkType()` method verifies that the input meets the requirements of the OCPP Primitive Datatypes.
+
 ```js
-ocppUtil.checkType('identifierString', input, 20));
+ocppUtil.checkType(type, input, length);
 ```
+
+**Parameters**
+
+- `type` {String} - expected type.
+- `input` {Any} - input value to check.
+- `length` {Number} *optional* - maximal length of the value.
+
+**Return value**
+
+Boolean. `true` if input has passed the check.
 
 **Supported types:**
 - `AnyType` - Text, data without specified length or format.
@@ -51,8 +82,26 @@ number of decimal places SHALL NOT exceed the maximum of 3.
 
 ### enums
 
+This library provides an access to all enumeration types of OCPP 1.6 and OCPP 2.0.
+
 ```js
-console.log(ocppUtil.enums('2.0').TRANSACTION_EVENT); // [ 'Ended', 'Started', 'Updated' ]
+ocppUtil.enums(version);
+```
+
+**Parameters**
+
+`version` {String} - desired version of the OCPP protocol.
+
+**Return value**
+
+Array of objects. Returns all enums of the specified version of the protocol.
+
+**Example:**
+
+```js
+const enums = ocppUtil.enums('2.0');
+
+console.log(enums.TRANSACTION_EVENT); // [ 'Ended', 'Started', 'Updated' ]
 ```
 
 ## Documentation
