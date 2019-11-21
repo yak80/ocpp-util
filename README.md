@@ -1,6 +1,6 @@
 # OCPP Util
 
-![](https://github.com/romfrolov/ocpp-util/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/ocpp-util.svg)](https://badge.fury.io/js/ocpp-util) [![Coverage Status](https://coveralls.io/repos/github/romfrolov/ocpp-util/badge.svg?branch=master)](https://coveralls.io/github/romfrolov/ocpp-util?branch=master)
+![](https://github.com/romfrolov/ocpp-util/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/ocpp-util.svg)](https://badge.fury.io/js/ocpp-util) [![Coverage Status](https://coveralls.io/repos/github/romfrolov/ocpp-util/badge.svg?branch=master)](https://coveralls.io/github/romfrolov/ocpp-util?branch=master) [![install size](https://packagephobia.now.sh/badge?p=ocpp-util)](https://packagephobia.now.sh/result?p=ocpp-util)
 
 OCPP utility library.
 
