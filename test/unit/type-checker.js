@@ -6,7 +6,7 @@
 
 'use strict';
 
-const moment      = require('moment');
+const dayjs       = require('dayjs');
 const helpers     = require('../helpers');
 const typeChecker = require('../../lib/type-checker');
 
@@ -351,13 +351,13 @@ describe('Type checker', () => {
         });
 
         it('ISO 8601 date in UTC with milliseconds', () => {
-            const dt = moment().format();
+            const dt = dayjs().format();
 
             typeChecker('dateTime', dt).should.be.true;
         });
 
         it('date without milliseconds and with the timezone offset.', () => {
-            const dt = moment().toISOString();
+            const dt = dayjs().toISOString();
 
             typeChecker('dateTime', dt).should.be.true;
         });
