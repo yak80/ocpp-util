@@ -1,6 +1,6 @@
 {
   "name": "ocpp-util",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "OCPP utility library",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.7",
-    "http-server": "^0.11.1",
+    "http-server": "^0.12.3",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.6.3",
     "mocha": "^6.2.2",
