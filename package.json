@@ -1,6 +1,6 @@
 {
   "name": "ocpp-util",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "OCPP utility library",
   "main": "index.js",
   "scripts": {
