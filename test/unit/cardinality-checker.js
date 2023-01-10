@@ -59,7 +59,7 @@ describe('Cardinality checker', () => {
         it('empty list', () => {
             const field = [];
 
-            checkCardinality('0..2', field).should.be.false;
+            checkCardinality('0..2', field).should.be.true;
         });
 
         it('list of one', () => {
@@ -97,7 +97,7 @@ describe('Cardinality checker', () => {
         it('empty list', () => {
             const field = [];
 
-            checkCardinality('0..*', field).should.be.false;
+            checkCardinality('0..*', field).should.be.true;
         });
 
         it('list of one', () => {
